@@ -12,7 +12,6 @@ import org.springframework.data.elasticsearch.repository.config.EnableElasticsea
 @Configuration
 @EnableElasticsearchRepositories(basePackageClasses = MatchingUserRepository.class)
 public class OpenSearchConfiguration extends AbstractOpenSearchConfiguration {
-    @Override
     @Bean
     public RestHighLevelClient opensearchClient() {
         final ClientConfiguration clientConfiguration = ClientConfiguration.builder()
